@@ -1,19 +1,22 @@
+/* General Styling */
 body, html {
   margin: 0;
   padding: 0;
   font-family: 'Arial', sans-serif;
   height: 100%;
   background-color: #000;
+  overflow-y: auto;  /* Enable scrolling */
 }
 
 /* Landing Page Layout */
 .landing-page {
   display: flex;
   flex-direction: column;
-  height: 100vh;
+  height: auto;
   justify-content: space-between;
   color: white;
   text-align: center;
+  padding-bottom: 20px; /* Add padding at the bottom to avoid content being cut off */
 }
 
 /* Navigation Bar */
@@ -35,6 +38,7 @@ body, html {
   padding-left: 5%;
 }
 
+/* Navigation Buttons */
 .nav-buttons button {
   margin-left: 15px;
   padding: 12px 25px;
@@ -100,25 +104,56 @@ body, html {
   margin: 0;
 }
 
+/* User Dashboard */
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 
+/* General Styling */
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+  height: 100%;
+  background-color: #000;
+  overflow-y: auto;
+}
+
+/* User Dashboard */
 .user-dashboard {
   background-color: black;
   color: red;
   text-align: center;
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  padding: 20px;
+  overflow-y: auto;
 }
 
+/* Pixel Text */
 .pixel-text {
   font-family: 'Press Start 2P', cursive;
   font-size: 18px;
   margin-bottom: 20px;
 }
 
+/* Large Report Box */
+.report-box {
+  border: 4px solid red;
+  padding: 40px;
+  margin: 20px 0;
+  width: 90%;
+  max-width: 800px;
+  box-shadow: 0 0 20px red;
+  border-radius: 15px;
+  background-color: rgba(255, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Buzzer Container */
 .buzzer-container {
   width: 150px;
   height: 150px;
@@ -128,6 +163,9 @@ body, html {
   justify-content: center;
   background-color: black;
   padding: 10px;
+  margin: 20px auto;
+  border: 2px solid red;
+  box-shadow: 0 0 15px red;
 }
 
 .buzzer {
@@ -137,27 +175,123 @@ body, html {
   border-radius: 50%;
 }
 
-.capture-button {
-  background-color: red;
-  color: black;
+.buzzer-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px; /* Increased space between buzzer and text */
+}
+
+.buzzer-text {
   font-family: 'Press Start 2P', cursive;
+  color: white;
   font-size: 14px;
-  padding: 10px 20px;
+  font-weight: bold;
+  text-align: left;
+}
+
+
+
+/* Location Text */
+.location-text {
+  color: white;
+  font-size: 14px;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+/* Image Upload Box */
+.upload-box {
+  border: 4px solid red;
+  padding: 30px;
+  width: 90%;
+  max-width: 800px;
+  box-shadow: 0 0 20px red;
+  border-radius: 15px;
+  background-color: rgba(50, 50, 50, 0.8);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Capture and Upload Buttons */
+.capture-button {
+  background-color: #d32f2f;
+  color: white;
+  font-family: 'Press Start 2P', cursive;
+  font-size: 16px;
+  padding: 15px 25px;
   border: none;
   cursor: pointer;
-  margin-top: 20px;
+  margin: 15px;
   border-radius: 8px;
-  box-shadow: 0 0 10px red;
+  box-shadow: 0 0 10px #d32f2f;
+  display: block;
+  transition: 0.3s ease-in-out;
 }
 
 .capture-button:hover {
-  background-color: darkred;
+  background-color: #b71c1c;
+  box-shadow: 0 0 15px #b71c1c;
 }
 
+/* Captured Image */
 .captured-image {
-  width: 200px;
+  width: 250px;
   height: auto;
-  margin-top: 20px;
+  margin: 15px;
   border-radius: 10px;
   box-shadow: 0 0 10px red;
+}
+
+/* Small Message Under Captured Image */
+.capture-message {
+  color: white;
+  font-size: 12px;
+  margin-top: -10px;
+}
+
+/* Description Box (Fixed Size, No Resizing) */
+.description-box {
+  width: 90%;
+  max-width: 800px;
+  height: 100px;
+  padding: 15px;
+  margin: 20px 0;
+  font-size: 16px;
+  border: 4px solid red;
+  border-radius: 10px;
+  background-color: black;
+  color: white;
+  font-family: 'Arial', sans-serif;
+  text-align: left;
+  resize: none;  /* Prevents resizing */
+  overflow-y: auto; /* Enables scrolling if text exceeds box size */
+}
+
+/* Submit Button */
+.submit-button {
+  margin-top: 30px;
+  background-color: green;
+  color: white;
+  font-family: 'Press Start 2P', cursive;
+  font-size: 18px;
+  padding: 15px 40px;
+  border: none;
+  cursor: pointer;
+  border-radius: 10px;
+  box-shadow: 0 0 10px green;
+  transition: 0.3s ease-in-out;
+}
+
+.submit-button:hover {
+  background-color: darkgreen;
+  box-shadow: 0 0 15px darkgreen;
+}
+
+.upload-success-message {
+  color: red;
+  font-size: 12px;
+  margin-top: 5px;
 }
