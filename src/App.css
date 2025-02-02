@@ -1,14 +1,14 @@
-/* General Styling */
+
 body, html {
   margin: 0;
   padding: 0;
   font-family: 'Arial', sans-serif;
   height: 100%;
   background-color: #000;
-  overflow-y: auto;  /* Enable scrolling */
+  overflow-y: auto;  
 }
 
-/* Landing Page Layout */
+
 .landing-page {
   display: flex;
   flex-direction: column;
@@ -16,10 +16,9 @@ body, html {
   justify-content: space-between;
   color: white;
   text-align: center;
-  padding-bottom: 20px; /* Add padding at the bottom to avoid content being cut off */
+  padding-bottom: 20px; 
 }
 
-/* Navigation Bar */
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -29,7 +28,7 @@ body, html {
   border-radius: 10px;
 }
 
-/* Logo Styling */
+
 .logo {
   font-size: 2rem;
   font-weight: bold;
@@ -38,7 +37,7 @@ body, html {
   padding-left: 5%;
 }
 
-/* Navigation Buttons */
+
 .nav-buttons button {
   margin-left: 15px;
   padding: 12px 25px;
@@ -69,9 +68,9 @@ body, html {
   background-color: #333;
 }
 
-/* Central Image Container */
+
 .image-container {
-  height: 60vh; /* Takes up 60% of the screen height */
+  height: 60vh; 
   display: flex;
   justify-content: center;
   align-items: center;
@@ -85,7 +84,7 @@ body, html {
   box-shadow: 0 0 25px rgba(255, 255, 255, 0.3);
 }
 
-/* Text Section with Black Background */
+
 .text-section {
   background-color: black;
   padding: 30px 20px;
@@ -104,10 +103,10 @@ body, html {
   margin: 0;
 }
 
-/* User Dashboard */
+
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 
-/* General Styling */
+
 body, html {
   margin: 0;
   padding: 0;
@@ -117,7 +116,7 @@ body, html {
   overflow-y: auto;
 }
 
-/* User Dashboard */
+
 .user-dashboard {
   background-color: black;
   color: red;
@@ -130,14 +129,13 @@ body, html {
   overflow-y: auto;
 }
 
-/* Pixel Text */
+
 .pixel-text {
   font-family: 'Press Start 2P', cursive;
   font-size: 18px;
   margin-bottom: 20px;
 }
 
-/* Large Report Box */
 .report-box {
   border: 4px solid red;
   padding: 40px;
@@ -153,7 +151,7 @@ body, html {
   justify-content: center;
 }
 
-/* Buzzer Container */
+
 .buzzer-container {
   width: 150px;
   height: 150px;
@@ -179,7 +177,7 @@ body, html {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 50px; /* Increased space between buzzer and text */
+  gap: 50px; 
 }
 
 .buzzer-text {
@@ -190,9 +188,6 @@ body, html {
   text-align: left;
 }
 
-
-
-/* Location Text */
 .location-text {
   color: white;
   font-size: 14px;
@@ -200,7 +195,6 @@ body, html {
   font-weight: bold;
 }
 
-/* Image Upload Box */
 .upload-box {
   border: 4px solid red;
   padding: 30px;
@@ -215,7 +209,6 @@ body, html {
   justify-content: center;
 }
 
-/* Capture and Upload Buttons */
 .capture-button {
   background-color: #d32f2f;
   color: white;
@@ -236,7 +229,7 @@ body, html {
   box-shadow: 0 0 15px #b71c1c;
 }
 
-/* Captured Image */
+
 .captured-image {
   width: 250px;
   height: auto;
@@ -245,14 +238,13 @@ body, html {
   box-shadow: 0 0 10px red;
 }
 
-/* Small Message Under Captured Image */
+
 .capture-message {
   color: white;
   font-size: 12px;
   margin-top: -10px;
 }
 
-/* Description Box (Fixed Size, No Resizing) */
 .description-box {
   width: 90%;
   max-width: 800px;
@@ -266,11 +258,11 @@ body, html {
   color: white;
   font-family: 'Arial', sans-serif;
   text-align: left;
-  resize: none;  /* Prevents resizing */
-  overflow-y: auto; /* Enables scrolling if text exceeds box size */
+  resize: none;  
+  overflow-y: auto; 
 }
 
-/* Submit Button */
+
 .submit-button {
   margin-top: 30px;
   background-color: green;
@@ -294,4 +286,25 @@ body, html {
   color: red;
   font-size: 12px;
   margin-top: 5px;
+}
+
+.map-wrapper {
+  text-align: center;
+  padding: 20px;
+}
+
+.map-container {
+  border: 4px solid red;
+  box-shadow: 0 0 20px red;
+  border-radius: 15px;
+  overflow: hidden;
+  max-width: 90%;
+  margin: auto;
+}
+
+.map-heading {
+  font-family: 'Press Start 2P', cursive;
+  color: yellow;
+  text-shadow: 0 0 10px red;
+  margin-bottom: 15px;
 }

@@ -140,7 +140,7 @@ function UserDashboard() {
         formData
       );
       setUploadedImageUrl(response.data.secure_url);
-      setUploadSuccess(true); // Set success message flag
+      setUploadSuccess(true); 
     } catch (error) {
       console.error("Error uploading image:", error);
       alert("Failed to upload image");
