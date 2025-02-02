@@ -6,9 +6,6 @@ import './MainDashboard.css';
 const MainDashboard = () => {
 
     const navigate = useNavigate(); 
-    const goToMainDashboard = () => { 
-    navigate('/main-dashboard');  
-};
   return (
     <div className="main-dashboard">
     <div className="button-container">

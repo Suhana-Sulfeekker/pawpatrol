@@ -6,10 +6,8 @@ import Layout from './components/Layout';
 import UserDashboard from './UserDashboard';
 import AuthorityDashboard from './AuthorityDashboard';
 import Map from './Map';
-
-import UserDashboard from './UserDashboard';
 import MainDashboard from './MainDashboard';
-import AuthorityDashboard from './AuthorityDashboard';
+
   
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
