@@ -1,0 +1,43 @@
+/* Footer Section */
+.footer {
+  padding: 20px;
+  text-align: center;
+  color: white;
+  margin-top: 20px;
+  }
+
+/* Footer Heading */
+.footer h3 {
+    
+  color: yellow;
+  margin-bottom: 10px;
+}
+
+/* Footer Paragraph */
+.footer p {
+  font-size: 1rem;
+  margin: 5px 0;
+}
+
+/* Footer List */
+.footer ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer ul li {
+  display: inline;
+  margin: 0 10px;
+}
+
+/* Footer Links */
+.footer ul li a {
+  color: lightblue;
+  text-decoration: none;
+}
+
+.footer ul li a:hover {
+  
+    text-decoration: underline
+  ;
+}

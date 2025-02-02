@@ -5,6 +5,7 @@ body, html {
   font-family: 'Arial', sans-serif;
   height: 100%;
   background-color: #000;
+  border-bottom: 4px solid yellow;
   overflow-y: auto;  
 }
 
@@ -39,6 +40,7 @@ body, html {
 
 
 .nav-buttons button {
+  
   margin-left: 15px;
   padding: 12px 25px;
   font-size: 1.2rem;
@@ -125,6 +127,8 @@ body, html {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
+  
   padding: 20px;
   overflow-y: auto;
 }
@@ -237,6 +241,47 @@ body, html {
   border-radius: 10px;
   box-shadow: 0 0 10px red;
 }
+/* Button Container */
+.button-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px; /* Space between buttons */
+  margin-top: 30px;
+}
+
+/* Pixel Style Buttons */
+.dashboard-button {
+  font-family: 'Press Start 2P', cursive;
+  font-size: 16px;
+  text-transform: uppercase;
+  color: red;
+  background-color: black;
+  border: 3px solid red;
+  padding: 15px 30px;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+  border-radius: 10px;
+  box-shadow: 0 0 15px red;
+  width: 20vw; /* Use viewport width to make it responsive */
+  height: 10vw; /* Adjust height based on viewport width for better ratio */
+  min-width: 200px; /* Minimum width */
+  min-height: 80px; /* Minimum height */
+  max-width: 300px; /* Maximum width */
+  max-height: 150px; /* Maximum height */
+  text-align: center;
+}
+
+
+/* Button Hover Effect */
+.dashboard-button:hover {
+  background-color: red;
+  color: black;
+  box-shadow: 0 0 25px red;
+  transform: scale(1.05);
+  
+}
+
 
 
 .capture-message {
