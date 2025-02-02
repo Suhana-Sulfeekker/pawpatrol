@@ -1,10 +1,13 @@
 import React from 'react';
 import './App.css';
+//import { BrowserRouter as Router } from 'react-router-dom'; // Route, Switch
 import { useNavigate } from 'react-router-dom';
 import { auth, provider, db } from "./firebase"; 
 import { signInWithPopup } from "firebase/auth";
 import { doc, getDoc } from "firebase/firestore"; 
+//import Layout from './components/layout';
 import backgroundImage from './assets/background.jpg';
+//import MainDashboard from './MainDashboard';
 
 function LandingPage() {
   const navigate = useNavigate();
@@ -13,13 +16,18 @@ function LandingPage() {
     try {
       const result = await signInWithPopup(auth, provider);
       console.log("User logged in:", result.user.email);
-      navigate('/user-dashboard'); 
+      localStorage.setItem('userLoggedIn', 'true');
+      navigate('/main-dashboard'); 
     } catch (error) {
       console.error("Error during user sign-in:", error);
       alert("Login failed. Please try again.");
     }
   };
 
+  const handlewihtoutLogin = async () => {
+    localStorage.setItem('userLoggedIn', 'false');
+    navigate('/main-dashboard'); 
+  };
   const handleAuthorityLogin = async () => {
     try {
       const result = await signInWithPopup(auth, provider);
@@ -51,6 +59,7 @@ function LandingPage() {
         <div className="nav-buttons">
           <button className="login-button" onClick={handleUserLogin}>Login</button>
           <button className="authority-button" onClick={handleAuthorityLogin}>Authority Login</button>
+          <button className="without-login-button" onClick={handlewihtoutLogin}>Continue Without Login</button>
         </div>
       </nav>
 
@@ -63,6 +72,7 @@ function LandingPage() {
         <p className="subtext">Report dangerous stray dog sightings in your area.</p>
       </div>
     </div>
+   // </Layout>
   );
 }
 

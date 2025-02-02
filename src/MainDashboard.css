@@ -1,0 +1,52 @@
+/* Ensure the entire page centers everything, excluding footer space */
+.main-dashboard {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centers content horizontally */
+    justify-content: space-between; /* Distribute content evenly, space between header/content and footer */
+    min-height: 100vh; /* Full viewport height */
+    width: 100%; /* Take full width */
+    text-align: center;
+    padding-bottom: 100px; /* Adjust this if the footer is taller */
+    margin: 0 auto; /* Ensure no margin on the left or right */
+  }
+  
+  /* Center and evenly space the buttons */
+  .button-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px; /* Even spacing between buttons */
+    width: 100%;
+    flex-grow: 1; /* Allow button container to take available space */
+  }
+  
+  /* Ensures buttons are large and fully centered */
+  .dashboard-button {
+    width: 550px; /* Larger buttons for better spacing */
+    max-width: 90%;
+    height: 70px; /* Fixed height to make them equal */
+    font-size: 22px;
+    padding: 20px 0; /* Balanced padding */
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto; /* Ensures buttons are centered horizontally */
+  }
+  
+  /* Responsive Fix for Smaller Screens */
+  @media (max-width: 600px) {
+    .main-dashboard {
+      padding-bottom: 80px;
+    }
+  
+    .dashboard-button {
+      width: 100%;
+      font-size: 16px;
+      height: 60px;
+      padding: 15px 0;
+    }
+  }
+  
