@@ -1,70 +1,84 @@
 # PawPatrol 🐾
 
-A crowdsourced web application to help keep our neighborhood safe by reporting stray dog sightings.
+## Basic Details
 
-## 🚀 About the Project  
+### Team Name: Hacklets
+
+### Team Members
+
+- Member 1: Suhana Sulfeekker - Model Engineering College
+- Member 2: M Gayathri - Model Engineering College
+- Member 3: Ananya P - Model Engineering College
+
+### Hosted Project Link
+
+[https://pawpatrol-tinkherhack.vercel.app/](https://pawpatrol-tinkherhack.vercel.app/)
+
+### Project Description
 
 PawPatrol is a crowdsourcing platform that enables users to report and track stray dog sightings, promoting safety and awareness in local communities. By leveraging geolocation, reverse geocoding, and map-based visualization, the platform provides real-time insights on stray dog activity.
 
----
+### The Problem Statement
 
-## 🔹 Core Features  
+Stray dogs in India pose significant challenges, including public safety concerns due to frequent attacks, the spread of diseases like rabies, and environmental issues arising from their scavenging habits. In 2021, approximately 1.6 crore stray dogs were reported in the country, with around 17.01 lakh dog bite cases documented that year. A survey indicated that over 60% of citizens consider attacks by stray dogs to be a common issue in their area.
 
-✅ **📍 Location-Based Reporting** – Uses the **[Geolocation API](https://developer.mozilla.org/en-US/docs/Web/API/Geolocation_API)** to fetch the user's latitude and longitude automatically.  
-✅ **🌍 Reverse Geocoding** – Converts coordinates into readable addresses using **[OpenStreetMap's Nominatim API](https://nominatim.org/release-docs/latest/)**.  
-✅ **🗺️ Interactive Map** – Displays all reported sightings using **[Leaflet.js](https://leafletjs.com/)**, an open-source JavaScript library for mapping.  
-✅ **📷 Image Upload** – Users can take and upload pictures of stray dogs using **[Cloudinary](https://cloudinary.com/documentation/react_integration)** for storage.  
-✅ **📊 Data Insights** – Sightings are visualized via an **hourly activity chart** powered by **[Chart.js](https://www.chartjs.org/)** to identify peak stray dog activity times.  
-✅ **🔑 Authority Dashboard** – Restricted-access login for authorities, allowing them to:  
-  - View reports and filter them by **location (substring search)** or **date range**.  
-  - Generate **PDF reports** using **[jsPDF](https://github.com/parallax/jsPDF)** for record-keeping and action.  
+### The Solution
 
----
+PawPatrol is your go-to platform for reporting and tracking stray dog sightings, making neighborhoods safer while keeping things interactive and fun! With real-time geolocation, smart reverse geocoding, and dynamic map visualizations, users can easily mark sightings, upload images, and stay updated on stray activity. Whether you're a concerned citizen or an animal lover, PawPatrol turns community safety into a collaborative mission—one pawprint at a time! 🐾📋
 
-## 🛠️ Tech Stack  
+## Technical Details
 
-### **Frontend**  
-- [React.js](https://react.dev/)  
-- [Leaflet.js](https://leafletjs.com/) (Map & markers)  
-- [Chart.js](https://www.chartjs.org/) (Data visualization)  
-- [Tailwind CSS](https://tailwindcss.com/) (Styling)  
+### Technologies/Components Used
 
-### **Backend & Database**  
-- [Firebase](https://firebase.google.com/) (Auth, Firestore, Hosting)  
-- [Cloudinary](https://cloudinary.com/documentation/react_integration) (Image storage)  
+#### Frontend
 
-### **APIs & Libraries**  
-- [Geolocation API](https://developer.mozilla.org/en-US/docs/Web/API/Geolocation_API)  
-- [OpenStreetMap Nominatim](https://nominatim.org/release-docs/latest/)  
-- [jsPDF](https://github.com/parallax/jsPDF) (PDF reports)  
+- React.js
+- Leaflet.js (Map & markers)
+- Chart.js (Data visualization)
+- Tailwind CSS (Styling)
 
----
+#### Backend & Database
 
-## 📍 How It Works  
+- Firebase (Auth, Firestore, Hosting)
+- Cloudinary (Image storage)
 
-### 1️⃣ User Reports a Stray Dog  
-- Captures location using **Geolocation API**.  
-- Reverse geocoding converts it to a **readable location**.  
-- User uploads an **image & adds details**.  
-- Data is stored in **Firestore** & images in **Cloudinary**.  
+#### APIs & Libraries
 
-### 2️⃣ Map-Based Visualization  
-- **Leaflet.js** displays reported locations as **markers**.  
-- Clicking a **marker** reveals **detailed information** (location, time, image).  
+- Geolocation API
+- OpenStreetMap Nominatim
+- jsPDF (PDF reports)
 
-### 3️⃣ Data Analytics  
-- **Chart.js** creates an **hourly sighting distribution chart**.  
-- Helps users identify **peak stray activity times**.  
+### Implementation
 
-### 4️⃣ Authority Dashboard (Restricted Access)  
-- **View & filter reports** by location or date range.  
-- **Generate reports** using **jsPDF** for actionable insights.  
+#### How It Works
 
----
+1. **User Reports a Stray Dog**
+   - Captures location using Geolocation API.
+   - Reverse geocoding converts it to a readable location.
+   - User uploads an image & adds details.
+   - Data is stored in Firestore & images in Cloudinary.
+2. **Map-Based Visualization**
+   - Leaflet.js displays reported locations as markers.
+   - Clicking a marker reveals detailed information (location, time, image).
+3. **Data Analytics**
+   - Chart.js creates an hourly sighting distribution chart.
+   - Helps users identify peak stray activity times.
+4. **Authority Dashboard (Restricted Access)**
+   - View & filter reports by location or date range.
+   - Generate reports using jsPDF for actionable insights.
 
-## 📌 Future Scope  
+### Future Scope
 
-🔹 **Automated Monthly Reports** – Email reports to authorities (**Govt., NGOs, newspapers, animal welfare orgs**).  
-🔹 **Public Sightings Validation** – Introduce a **thumbs-up/down system** to verify reports.  
-🔹 **AI Image Recognition** – Track the same stray dog across multiple sightings using **image detection**.  
-🔹 **Animal Population Surveys** – Govt. agencies can use **PawPatrol** for **stray animal surveys & planning welfare programs**.  
+🔹 Automated Monthly Reports – Email reports to authorities (Govt., NGOs, newspapers, animal welfare orgs).  
+🔹 Public Sightings Validation – Introduce a thumbs-up/down system to verify reports.  
+🔹 AI Image Recognition – Track the same stray dog across multiple sightings using image detection.  
+🔹 Animal Population Surveys – Govt. agencies can use PawPatrol for stray animal surveys & planning welfare programs.
+
+### Installation
+
+```sh
+npm install
+### Run
+
+```sh
+npm start
