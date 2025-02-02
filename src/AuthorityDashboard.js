@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
 import { db, auth } from "./firebase";
 import { collection, getDocs, query, orderBy } from "firebase/firestore";
-import { jsPDF } from "jspdf";  // To generate PDF
-import "jspdf-autotable"; // AutoTable for PDF generation
+import { jsPDF } from "jspdf";  
+import "jspdf-autotable"; 
 import './App.css';
 
 function AuthorityDashboard() {
