@@ -12,7 +12,7 @@ const MainDashboard = () => {
   return (
     <div className="main-dashboard">
     <div className="button-container">
-    <button className="dashboard-button" onClick={() => navigate('/map')}>
+    <button className="dashboard-button" onClick={() => navigate('/Map')}>
        View Map
     </button>
 
