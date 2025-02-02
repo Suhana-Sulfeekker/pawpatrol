@@ -74,66 +74,36 @@ PawPatrol is your go-to platform for reporting and tracking stray dog sightings,
 🔹 AI Image Recognition – Track the same stray dog across multiple sightings using image detection.  
 🔹 Animal Population Surveys – Govt. agencies can use PawPatrol for stray animal surveys & planning welfare programs.
 
-### Implementation
-For Software:
-# Installation
-[commands]
-
-# Run
-[commands]
-
 ### Project Documentation
 For Software:
 
 # Screenshots (Add at least 3)
-![Screenshot1](Add screenshot 1 here with proper name)
-*Add caption explaining what this shows*
-
-![Screenshot2](Add screenshot 2 here with proper name)
-*Add caption explaining what this shows*
-
-![Screenshot3](Add screenshot 3 here with proper name)
-*Add caption explaining what this shows*
-
-# Diagrams
-![Workflow](Add your workflow/architecture diagram here)
-*Add caption explaining your workflow*
-
-For Hardware:
-
-# Schematic & Circuit
-![Circuit](Add your circuit diagram here)
-*Add caption explaining connections*
-
-![Schematic](Add your schematic diagram here)
-*Add caption explaining the schematic*
-
-# Build Photos
-![Team](Add photo of your team here)
 
 
-![Components](Add photo of your components here)
-*List out all components shown*
 
-![Build](Add photos of build process here)
-*Explain the build steps*
+![Page 1](https://github.com/user-attachments/assets/4998cc32-633e-4544-95f0-cce4a20baa52)
+![map1](https://github.com/user-attachments/assets/633b9cd5-0df0-4e5a-8c8f-ff01defff814)
+![map 2](https://github.com/user-attachments/assets/467ff25f-6101-4023-94f6-11cfeefe5505)
+![landing page](https://github.com/user-attachments/assets/f85dd390-da9c-4212-8c1e-1373186b8b53)
+![google authentication](https://github.com/user-attachments/assets/60dc6b5e-3c1a-4749-8e8a-ca1d530d596a)
+![authority dashboard](https://github.com/user-attachments/assets/69059887-a3f0-41ac-83e6-3181d6483566)
+![userdashboard1](https://github.com/user-attachments/assets/c64bceb2-ab69-40ed-ad71-c1df16408503)
+![userdashboard 2](https://github.com/user-attachments/assets/80ecf466-b151-4222-934e-3483032d5214)
+![user dashboard 3](https://github.com/user-attachments/assets/f0a3af0b-9d05-42a6-9ada-445371c376db)
+![report](https://github.com/user-attachments/assets/71a22739-bac5-4c2e-b2c1-42cc37323557)
 
-![Final](Add photo of final product here)
-*Explain the final build*
 
 ### Project Demo
 # Video
-[Add your demo video link here]
-*Explain what the video demonstrates*
+[https://drive.google.com/file/d/1My2Kko4u1iBOTmaBA7EQQ94BfIv1V3zz/view?usp=sharing]
 
-# Additional Demos
-[Add any extra demo materials/links]
+
 
 ## Team Contributions
-- [Name 1]: [Specific contributions]
-- [Name 2]: [Specific contributions]
-- [Name 3]: [Specific contributions]
-
+- *Suhana Sulfeekker*: User dashboard, login and authentication, and map setup.
+- *M Gayathri*: Main dashboard, footer setup, and UI works.
+- *Ananya P*: Authority dashboard, footer and other UI works.
+  
 ---
 Made with ❤️ at TinkerHub
 
